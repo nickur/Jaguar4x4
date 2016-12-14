@@ -1,0 +1,24 @@
+<launch>
+
+<node
+pkg= "drrobot_jaguar4x4_player" 
+type= "drrobot_jaguar4x4_player_node" 
+name= "player"/>  
+
+<node
+pkg= "drrobot_jaguar4x4_player" 
+type= "drrobot_jaguar4x4_IMU_node" 
+name= "IMU"/>  
+
+<node 
+pkg= "joy" 
+type= "joy_node" 
+name= "controller"/>
+
+<node 
+pkg= "drrobot_jaguar4x4_player" 
+type= "drrobot_joystick_teleop_node" 
+name= "joystick"/>  
+
+</launch>
+
